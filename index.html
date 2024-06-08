@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep Internetowy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sklep Internetowy</h1>
+    </header>
+    <main>
+        <section id="admin-section">
+            <h2>Dodaj produkt</h2>
+            <form id="add-product-form">
+                <label for="product-name">Nazwa produktu:</label>
+                <input type="text" id="product-name" required>
+                
+                <label for="product-price">Cena:</label>
+                <input type="number" id="product-price" required>
+                
+                <label for="product-description">Opis:</label>
+                <textarea id="product-description" required></textarea>
+                
+                <button type="submit">Dodaj produkt</button>
+            </form>
+        </section>
+        <section id="products-section">
+            <h2>Produkty</h2>
+            <ul id="products-list">
+                <!-- Lista produktów -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
